@@ -1,0 +1,80 @@
+.about {
+    background-image: url("../images/testmonials-bg 1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    text-align: center;
+    background-position: bottom;
+
+
+
+
+
+    // .about__title
+
+    &__title {
+        padding: 57px 0 53px 0;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        gap: 45px;
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+            gap: 78px;
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 90px;
+        }
+    }
+
+    // .about__list-item
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    // .about__list-item-image-hold
+
+    &__list-item-image-hold {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    // .about__list-item-text
+
+    &__list-item-text {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    // .about__footer-text
+
+    &__footer-text {
+        margin-top: 37px;
+        color: #A291A5;
+        font-size: 14px;
+        text-align: center;
+        line-height: 21px;
+        font-family: 'Lato', sans-serif;
+        max-width: 890px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

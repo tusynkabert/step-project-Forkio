@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 300ms;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: transparent;
+
+}
+
+.container {
+    max-width: 340px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @include md {
+        max-width: 788px;
+        min-width: 768px;
+        padding: 0 10px;
+    }
+
+    @include lg {
+        max-width: 1220px;
+        min-width: 1200px;
+    }
+}
+
+//.container__editor {
+//
+//    min-width: 320px;
+//    margin: 0 10px;
+//    padding: 0 10px;
+//
+//    @include md {
+//        margin: 0 30px;
+//    }
+//
+//    @include lg {
+//        margin: 0 auto;
+//        height: 100%;
+//    }
+//}

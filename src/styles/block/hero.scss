@@ -1,0 +1,96 @@
+// MAIN
+.hero {
+    background: url('../images/hero.jpeg');
+    padding: 49px 0 416px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 76px;
+    color: #fff;
+
+
+    // .hero__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 19px;
+
+        @include md {
+            font-size: 72px;
+            line-height: 72px;
+        }
+
+        @include lg {
+            font-size: 82px;
+            line-height: 82px;
+        }
+    }
+
+    // .hero__subtitle
+
+    &__subtitle {
+        margin-bottom: 14px;
+        font-size: 18px;
+        line-height: 24px;
+        color: $accent;
+        max-width: 270px;
+        margin: 0 auto 14px auto;
+        font-family: "Lato", sans-serif;
+
+        @include md {
+            font-size: 24px;
+            max-width: unset;
+        }
+
+        @include lg {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+
+    // .hero__additional
+
+    &__additional {
+        font-size: 14px;
+        line-height: 14px;
+        color: $ui-black-200;
+        text-transform: uppercase;
+    }
+
+    .button_download {
+        position: absolute;
+        background: $accent;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 15px 29px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 40px;
+        white-space: nowrap;
+
+        @include md {
+            padding: 23px 61px;
+            font-size: 21px;
+            line-height: 23px;
+        }
+
+        &::after {
+            content: 'Unlimited 30-Days Trial Period';
+            position: absolute;
+            top: calc(100% + 18.5px);
+            color: $ui-black-200;
+            font-size: 14px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+// MAIN END
